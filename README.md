@@ -24,32 +24,32 @@ Ensure you have a running PostgreSQL (v 9+) server available.
 
 ### Create new user
 
-POST http://localhost:5000/api/auth/signup
-Content-Type: application/json
-
-{
-  "username": "admin",
-  "password": "12345678",
-  "firstName": "Josef",
-  "lastName": "Novák"
-}
+POST http://localhost:5000/api/auth/signup  
+Content-Type: application/json  
+  
+{  
+  "username": "admin",  
+  "password": "12345678",  
+  "firstName": "Josef",  
+  "lastName": "Novák"  
+}  
 
 ### Login user and get tokens
 
-POST http://localhost:5000/api/auth/login
-Content-Type: application/json
-
-{
-  "username": "admin",
-  "password": "12345678"
-}
+POST http://localhost:5000/api/auth/login  
+Content-Type: application/json  
+  
+{  
+  "username": "admin",  
+  "password": "12345678"  
+}  
 
 ### Generate new access token
 
-POST http://localhost:5000/api/auth/token
-Content-Type: application/json
-
-{}
+POST http://localhost:5000/api/auth/token  
+Content-Type: application/json  
+  
+{}  
 
 ### Get all users (protected route)
 
