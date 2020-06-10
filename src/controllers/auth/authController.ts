@@ -35,8 +35,8 @@ export const signUp = async (req: Request, res: Response, next: NextFunction) =>
         const user = { ...req.body, password: hashedPwd };
 
         const result = await db.one(
-            `INSERT INTO ${TABLE_PREFIX}${TABLE_NAME.USERS} (username, password) VALUES ($1, $2) RETURNING id, username`,
-            [user.username, user.password]
+            `INSERT INTO ${TABLE_PREFIX}${TABLE_NAME.USERS} (username, password, first_name, last_name) VALUES ($1, $2, $3, $4) RETURNING id, username, first_name, last_name`,
+            [user.username, user.password, user.firstName, user.lastName]
         );
 
         res.json({
