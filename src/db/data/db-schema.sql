@@ -1,5 +1,5 @@
-DROP TABLE IF EXISTS "zsdis_admin_users";
-CREATE TABLE "zsdis_admin_users"
+DROP TABLE IF EXISTS "auth_server_users";
+CREATE TABLE "auth_server_users"
 (
   id SERIAL PRIMARY KEY,
   username VARCHAR(128) NOT NULL UNIQUE,

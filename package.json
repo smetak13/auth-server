@@ -1,7 +1,7 @@
 {
-    "name": "zsdis-admin-server",
+    "name": "auth-server",
     "version": "1.0.0",
-    "description": "Server for ZSDIS Admin Tool",
+    "description": "Server for user auth",
     "main": "dist/index.js",
     "scripts": {
         "start": "npm run build && node dist/index.js",

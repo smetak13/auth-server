@@ -10,8 +10,8 @@ Ensure you have a running PostgreSQL (v 9+) server available.
 
 ### Steps
 
-1. `git clone`
-2. `cd zsdis-admin-server`
+1. `git clone https://github.com/smetak13/auth-server.git`
+2. `cd auth-server`
 3. `cp .env.example.env .env`
 4. `edit .env` (mainly PostgreSQL connection parameters and token secrets)
 5. `npm i`

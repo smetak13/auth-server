@@ -28,7 +28,7 @@ class AppServer {
 
         this.app.get('/', (req: Request, res: Response) => {
             const response = {
-                message: 'ZSDIS Admin Server running',
+                message: 'Auth server up and running!',
             };
             res.json(response);
         });

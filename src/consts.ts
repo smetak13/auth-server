@@ -25,7 +25,7 @@ export const API_ROUTE = {
     },
 };
 
-export const TABLE_PREFIX = process.env.TABLE_PREFIX || 'zsdis_admin_';
+export const TABLE_PREFIX = process.env.TABLE_PREFIX || 'auth_server_';
 
 export const TABLE_NAME = {
     USERS: 'users',
